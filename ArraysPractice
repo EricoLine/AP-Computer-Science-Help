@@ -1,0 +1,108 @@
+import java.util.Arrays;
+
+public class ArraysPractice {
+
+	/**
+	 * Do not change any values in the main method below.
+	 */
+	public static void main(String[] args) {
+		int[] array1 = { 2, 42, 1 };
+		int[] array2 = { 4, -1, -3, 0, 8, -4, 2 };
+		int[] array3 = { -8, 42, 1, 42, -1, 1, -2, 42, -5, 0, 2, 42 };
+		System.out.println("sumUpValuesInArray test:");
+		System.out.println(sumUpValuesInArray(array1) == 45 ? "Passed!"
+				: "Expected 45 but you returned " + sumUpValuesInArray(array1));
+		System.out.println(sumUpValuesInArray(array2) == 6 ? "Passed!"
+				: "Expected 6 but you returned " + sumUpValuesInArray(array2));
+		System.out.println(sumUpValuesInArray(array3) == 156 ? "Passed!"
+				: "Expected 156 but you returned " + sumUpValuesInArray(array3));
+
+		System.out.println("\ncount42's test:");
+		System.out.println(count42s(array1) == 1 ? "Passed!" : "Expected 1 but you returned " + count42s(array1));
+		System.out.println(count42s(array2) == 0 ? "Passed!" : "Expected 0 but you returned " + count42s(array2));
+		System.out.println(count42s(array3) == 4 ? "Passed!" : "Expected 4 but you returned " + count42s(array3));
+		System.out.println("\nfindFirstLocation test");
+		System.out.println(findFirstLocation(array1, 42) == 1 ? "Passed!"
+				: "Expected 1 but you returned " + findFirstLocation(array1, 42));
+		System.out.println(findFirstLocation(array1, 44) == -1 ? "Passed!"
+				: "Expected -1 but you returned " + findFirstLocation(array1, 44));
+		System.out.println(findFirstLocation(array2, 8) == 4 ? "Passed!"
+				: "Expected 4 but you returned " + findFirstLocation(array1, 8));
+		System.out.println(findFirstLocation(array2, 18) == -1 ? "Passed!"
+				: "Expected -1 but you returned " + findFirstLocation(array1, 18));
+		System.out.println(findFirstLocation(array3, 42) == 1 ? "Passed!"
+				: "Expected 1 but you returned " + findFirstLocation(array1, 42));
+
+		System.out.println("\nmakeThemAllPostive test:");
+		makeThemAllPostive(array1);
+		String actual = Arrays.toString(array1);
+		System.out.println(actual.equals("[2, 42, 1]") ? "Passed!" : "Expected [2, 42, 1] but you returned " + actual);
+		makeThemAllPostive(array2);
+		actual = Arrays.toString(array2);
+		System.out.println(actual.equals("[4, 1, 3, 0, 8, 4, 2]") ? "Passed!"
+				: "Expected [4, 1, 3, 0, 8, 4, 2] but you returned " + actual);
+		makeThemAllPostive(array3);
+		actual = Arrays.toString(array3);
+		System.out.println(actual.equals("[8, 42, 1, 42, 1, 1, 2, 42, 5, 0, 2, 42]") ? "Passed!"
+				: "Expected [8, 42, 1, 42, 1, 1, 2, 42, 5, 0, 2, 42] but you returned " + actual);
+	}
+
+	/**
+	 * Given a non-null array, return the sum of all elements.
+	 * 
+	 * @param arr != null
+	 * @return sum of all elements
+	 */
+	public static int sumUpValuesInArray(int[] arr) {
+
+		int result = 0;
+		for (int element : arr)
+			result += element;
+		return result;
+
+	}
+	// TODO: Complete the body of this method so that all of the tests say
+	// Passed! in the console.
+
+	/**
+	 * Given a non-null array, count the number of elements that are 42.
+	 * 
+	 * @param theArray != null
+	 * @return number of elements that are 42.
+	 */
+	public static int count42s(int[] theArray) {
+		      
+		// TODO: Complete the body of this method so that all of the tests say
+		// Passed! in the console.
+		 return 42;
+	}
+
+	/**
+	 * Given a non-null array, return the index of the first location of value found
+	 * from the beginning of the array. If the item is not in the array, return -1.
+	 * 
+	 * @param arr   != null
+	 * @param value may or may not be in the array.
+	 * @return
+	 */
+	public static int findFirstLocation(int[] arr, int value) {
+
+		// TODO: Complete the body of this method so that all of the tests say
+		// Passed! in the console.
+		return 42;
+	}
+
+	/**
+	 * Removes the negative signs from all values in the array. This mutates the
+	 * original array and changes the values in it.
+	 * 
+	 * @param arr !=null
+	 */
+	public static void makeThemAllPostive(int[] arr) {
+
+		// TODO: Complete the body of this method so that all of the tests say
+		// Passed! in the console.
+     return 42;
+	}
+
+}
